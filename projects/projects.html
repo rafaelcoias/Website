@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="projects.css">
+    <script src="projects.js" defer></script>
+    <title>IT Projects</title>
+    <link rel="icon" type="image/x-icon" href="../images/others/icon.png" width="20px">
+</head>
+<body>
+    <!--    HEADER      -->
+    <header>
+        <div class="social-media">
+            <button type="button" class="media" onclick="window.open('https://www.instagram.com/rafaelcoias/','_blank')"><img src="../images/social-media/instagram.png" width="40rem"></button>
+            <button type="button" class="media" onclick="window.open('https://www.facebook.com/rafael.coias','_blank')"><img src="../images/social-media/facebook.png" width="50rem"></button>
+            <button type="button" class="media" onclick="window.open('https://pt.linkedin.com/in/rafael-pereira-c%C3%B3ias-022335223','_blank')"><img src="../images/social-media/linkedin.png" width="55rem" style="position:relative; top:3px"></button>
+            <button type="button" class="media" onclick="window.open('https://github.com/rafaelcoias','_blank')"><img src="../images/social-media/github.png" width="35rem"></button>
+        </div>
+        <div class="position-info">
+            <label class="info" onclick="window.open('../about/about.html')">About</label>
+            <label class="info" onclick="window.open('#')">Projects</label>
+            <label class="info" onclick="window.open('../contact/contact.html')">Contact</label>
+        </div>
+        <img class="menu-icon" src="../images/others/menu-button.png" onclick="openmenu()">
+        <div id="menuList">
+            <p onclick="window.open('../about/about.html')">ABOUT</p>
+            <p onclick="window.open('../contact/contact.html')">CONTACTS</p>
+        </div>
+    </header>
+    <!--    MAIN      -->
+    <main>
+        <h1>Some of my IT Projects</h1>
+        <div class="grid">
+            <div class="project libft" onclick="window.open('https://github.com/rafaelcoias/42_libft')">
+                <h3>Libft</h3>
+                <p>My very first own library in C</p>
+            </div>
+            <div class="project pushswap" onclick="window.open('https://github.com/rafaelcoias/42_Push_Swap')">
+                <h3>Push Swap</h3>
+                <p>Efficient sorting algorithm using stacks</p>
+            </div>
+            <div class="project solong" onclick="window.open('https://github.com/rafaelcoias/42_So_Long')">
+                <h3>So Long</h3>
+                <p>Simple 2D game in C using minilibx</p>
+            </div>
+            <div class="project pipex" onclick="window.open('https://github.com/rafaelcoias/42_Pipex')">
+                <h3>Pipex</h3>
+                <p>Handle pipes and file descriptors</p>
+            </div>
+            <div class="project philo" onclick="window.open('https://github.com/rafaelcoias/42_Philosophers')">
+                <h3>Philo</h3>
+                <p>Solve the philosophers problem using threads and mutexes</p>
+            </div>
+            <div class="project minishell" onclick="window.open('https://github.com/rafaelcoias/42_minishell')">
+                <h3>Minishell</h3>
+                <p>Create my own shell using C</p>
+            </div>
+            <div class="project csharp" onclick="window.open('https://github.com/rafaelcoias/Csharp_Projects')">
+                <h3>High School Projects</h3>
+                <p>My first programming projects in C#</p>
+            </div>
+            <div class="project photoalbum" onclick="window.open('https://github.com/rafaelcoias/photo_album')">
+                <h3>Photo Album</h3>
+                <p>Using classes and its atributes to create a photo album in Java</p>
+            </div>
+            <div class="project scut" onclick="window.open('https://github.com/rafaelcoias/Scut-IUL')">
+                <h3>Scut-IUL</h3>
+                <p>Learning about shell script, signals, semaphores and message queues</p>
+            </div>
+            <div class="project webdev" onclick="window.open('https://github.com/rafaelcoias/Web_Dev')">
+                <h3>Web Dev</h3>
+                <p>My very first own website using HTML, CSS and JS</p>
+            </div>
+        </div>
+    </main>
+    <!--    FOOTER      -->
+    <footer>
+        <div class="footer_media">
+            <button type="button" class="media_end" onclick="window.open('https://www.instagram.com/rafaelcoias/','_blank')"><img src="../images/social-media/instagram-footer.png" width="35"></button>
+            <button type="button" class="media_end" onclick="window.open('https://www.facebook.com/rafael.coias','_blank')"><img src="../images/social-media/facebook-footer.png" width="35"></button>
+            <button type="button" class="media_end" onclick="window.open('https://pt.linkedin.com/in/rafael-pereira-c%C3%B3ias-022335223','_blank')"><img src="../images/social-media/linkdin-footer.png" width="35"></button>
+            <button type="button" class="media_end" onclick="window.open('https://github.com/rafaelcoias','_blank')"><img src="../images/social-media/github.png" width="33"></button>
+        </div>
+        <p class="name">&copy; Rafael Cóias 2022<br> Created and Designed by Rafael Cóias</p>
+    </footer>
+</body>
+</html>

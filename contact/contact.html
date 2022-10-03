@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="contact.css">
+    <script src="contact.js" defer></script>
+    <title>Contact me</title>
+    <link rel="icon" type="image/x-icon" href="../images/others/icon.png" width="20px">
+</head>
+<body>
+    <!--    HEADER      -->
+    <header>
+        <div class="social-media">
+            <button type="button" class="media" onclick="window.open('https://www.instagram.com/rafaelcoias/','_blank')"><img src="../images/social-media/instagram.png" width="40rem"></button>
+            <button type="button" class="media" onclick="window.open('https://www.facebook.com/rafael.coias','_blank')"><img src="../images/social-media/facebook.png" width="50rem"></button>
+            <button type="button" class="media" onclick="window.open('https://pt.linkedin.com/in/rafael-pereira-c%C3%B3ias-022335223','_blank')"><img src="../images/social-media/linkedin.png" width="55rem" style="position:relative; top:3px"></button>
+            <button type="button" class="media" onclick="window.open('https://github.com/rafaelcoias','_blank')"><img src="../images/social-media/github.png" width="35rem"></button>
+        </div>
+        <div class="position-info">
+            <label class="info" onclick="window.open('../about/about.html')">About</label>
+            <label class="info" onclick="window.open('../projects/projects.html')">Projects</label>
+            <label class="info" onclick="window.open('#')">Contact</label>
+        </div>
+        <img class="menu-icon" src="../images/others/menu-button.png" onclick="openmenu()">
+        <div id="menuList">
+            <p onclick="window.open('../about/about.html')">ABOUT</p>
+            <p onclick="window.open('../projects/projects.html')">PROJECTS</p>
+        </div>
+    </header>
+    <!--    MAIN      -->
+    <main>
+        <h1>Lets's Talk !</h1>
+        <form onsubmit="sendEmail(); return false;">
+            <input placeholder="Name" id="name" type="text" autocomplete="off">
+            <input placeholder="Email" id="email" type="text" autocomplete="off">
+            <input placeholder="Subject" id="subject" type="text" autocomplete="off">
+            <textarea placeholder="Message" id="message" cols="30" rows="10"></textarea>
+            <button id="btn" type="submit">Send</button>
+        </form>
+    </main>
+    <!--    FOOTER      -->
+    <footer>
+        <div class="contact">
+            <p class="title">My email</p>
+            <p class="email">rafaelmsppcoias@gmail.com</p>
+        </div>
+        <p class="name">&copy; Rafael Cóias 2022<br> Created and Designed by Rafael Cóias</p>
+    </footer>
+    <script src="../images/social-media/"

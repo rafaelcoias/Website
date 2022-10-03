@@ -1,0 +1,953 @@
+/*  ALL */
+
+html, body {
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #1e3c6e;
+
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* HEADER */
+
+
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 999;
+    background-image: linear-gradient(#1e3c6e, #1e3c6e);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 5rem;
+
+}
+
+.social-media {
+    position: relative;
+    width: 35%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.media {
+    border: transparent;
+    background-color: transparent;
+    margin: 4%;
+    cursor: pointer;
+}
+
+.media:hover {
+    transform: scale(1.2);
+}
+
+.position-info {
+    position: relative;
+    width: 35%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.info {
+    background-image: linear-gradient(white, white);
+    background-size: 0% 3px;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    transition: background-size 300ms ease;
+    padding: 0.6rem;
+
+    text-decoration: none;
+
+    margin: 2.2rem;
+    font-size: 1.2rem;
+}
+
+.info:hover {
+    cursor: pointer;
+    background-size: 100% 3px;
+}
+
+#menuList {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+}
+
+.main_and_history {
+    background-color: black;
+}
+
+/* MAIN */
+
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    height: 105vh;
+
+    background-image: linear-gradient(#1e3c6e 50%, black);
+}
+
+main img {
+    position: relative;
+    width: 16rem;
+    animation: shadow 1s forwards 0.7s;
+}
+
+.name {
+    margin: 1rem;
+}
+
+.me {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    background-image: linear-gradient( #1e3c6e, grey);
+    background-size: 0% 100%;
+    background-repeat: no-repeat;
+    background-position: left;
+    transition: background-size 1s ease;
+}
+
+.me:hover {
+    background-size: 100% 100%;
+}
+
+.me:hover .about {
+    display: inline;
+}
+
+.me:hover .name {
+    display: none;
+}
+
+.me:hover .about .title {
+    animation: slide-in 1s forwards 800ms;
+    background-size: 75% 3px;
+}
+
+.me:hover img {
+    animation: not-shadow 1s forwards;
+}
+
+main h1 {
+    font-size: 3rem;
+    opacity: 0;
+    animation: slide-in 1.5s forwards 0.7s;
+}
+
+main span {
+    position: relative;
+    left: 1%;
+    font-size: 1.2rem;
+    opacity: 0;
+    animation: slide-in 1s forwards;
+    margin: 0;
+}
+
+.name .it {
+    animation-delay: 2s;
+}
+
+.name .dev {
+    animation-delay: 2.5s;
+}
+
+.name .des {
+    animation-delay: 3s;
+}
+
+.about {
+    display: none;
+    justify-content: center;
+    align-items:center;
+
+    width: 19.6rem;
+    height: 25.9rem;
+}
+
+.about div p {
+    opacity: 0;
+    margin: 1.2rem;
+    font-size: 17px;
+}
+
+.about .title {
+    text-align: right;
+    font-size: 1.5rem;
+
+    margin: 1rem 1rem 2.5rem 1rem;
+    padding: 1rem;
+
+    background-image: linear-gradient(white, black);
+    background-size: 0% 3px;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    transition: background-size 300ms ease;
+
+    opacity: 0;
+}
+
+.me:hover .about .one {
+    animation: slide-in 1s forwards 500ms;
+}
+
+.me:hover .about .two {
+    animation: slide-in 1s forwards 600ms;
+}
+
+.me:hover .about .three {
+    animation: slide-in 1s forwards 700ms;
+}
+
+.me:hover .about .four {
+    animation: slide-in 1s forwards 800ms;
+}
+
+.me:hover .about .five {
+    animation: slide-in 1s forwards 900ms;
+}
+
+/* HISTORY */
+
+
+
+.history {
+    background-image: linear-gradient(black 1%, #1e3c6e, #1e3c6e);
+}
+
+.history h2 {
+    position: relative;
+    top: 1rem;
+
+    font-size: 2rem;
+    text-align: center;
+
+    padding: 2rem;
+}
+
+.history div {
+    position: relative;
+    height: 20rem;
+    top: 0.5rem;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.history img {
+    width: 1rem;
+}
+
+.history .iscte-mobile {
+    display: none;
+}
+
+.history p {
+    font-size: 1.3rem;
+    text-align: center;
+    width: 40rem;
+}
+
+.history .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.history .link {
+    opacity: 0;
+    color: rgba(90, 90, 255, 75%);
+    text-decoration: none;
+    transition: opacity 1s;
+    transition-delay: 2s;
+}
+
+.history .link:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.history .reveal:hover .link{
+    opacity: 1;
+}
+
+.csjb , .fortytwo, .cisco{
+    width: 18rem;
+}
+
+.germany {
+    width: 11rem;
+}
+
+.iscte {
+    width: 25rem ;
+}
+
+
+/* KNOWLEDGE */
+
+
+.knowledge {
+    height: 42rem;
+
+    background-image: linear-gradient(#1e3c6e, #2b5398, grey);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    text-align: center;
+}
+
+.knowledge h2 {
+    position: relative;
+    top: 2rem;
+
+    font-size: 2rem;
+}
+
+.all {
+    position: relative;
+    height: 30rem;
+    top: 2rem;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    margin: 2rem;
+}
+
+.item {
+    position: relative;
+
+    width: 12rem;
+    height: 5rem;
+    font-size: 1.5rem;
+
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+
+    border: solid 0.4rem grey;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    transition: 1.5s ease;
+}
+
+.item:hover {
+    width: 20rem;
+    height: 28rem;
+    background-color: rgba(255, 255, 255, 10%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.item:hover p {
+    opacity: 0;
+    animation: fade-in 1s forwards 0.5s;
+}
+
+.item .logos {
+    display: none;
+}
+
+.item:hover .logos {
+    display: grid;
+    opacity: 0;
+    animation: fade-in 1s forwards 0.5s;
+}
+
+.item img {
+    opacity: 0;
+    margin: 5px;
+}
+
+.item .skills label {
+    opacity: 0;
+    margin: 1rem;
+    width: 13.7rem;
+    font-size: 1.2rem;
+}
+
+.item .tools label {
+    opacity: 0;
+    margin: 1rem;
+    width: 13.5rem;
+    font-size: 1.2rem;
+}
+
+.item .lang label {
+    opacity: 0;
+    margin: 1rem;
+    width: 10rem;
+    font-size: 1.2rem;
+}
+
+.item:hover img {
+    animation: fade-in 1s forwards;
+    animation-delay: 0.5s;
+}
+
+.skills.logos {
+    grid-template-columns: repeat(3, 5rem);
+    row-gap: 1.2rem;
+    column-gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.tools.logos {
+    grid-template-columns: repeat(3, 5rem);
+    row-gap: 3rem;
+    column-gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.lang.logos {
+    grid-template-columns: repeat(2, 6rem);
+    row-gap: 3rem;
+    column-gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo:hover ~ label {
+    animation: fade-in 1s forwards;
+}
+
+
+/* LOGO NAME */
+
+.c:hover ~ label::after {
+    content: 'C';
+}
+
+.cpp:hover ~ label::after {
+    content: 'C++';
+}
+
+.csharp:hover ~ label::after {
+    content: 'C Sharp';
+}
+
+.html:hover ~ label::after {
+    content: 'HTML';
+}
+
+.css:hover ~ label::after {
+    content: 'CSS';
+}
+
+.js:hover ~ label::after {
+    content: 'Java Script';
+}
+
+.java:hover ~ label::after {
+    content: 'Java';
+}
+
+.bash:hover ~ label::after {
+    content: 'Shell Script';
+}
+
+.mysql:hover ~ label::after {
+    content: 'SQL';
+}
+
+.excel:hover ~ label::after {
+    content: 'Data Modeling';
+}
+
+.photoshop:hover ~ label::after {
+    content: 'Photoshop';
+}
+
+.git:hover ~ label::after {
+    content: 'Git';
+}
+
+.linux:hover ~ label::after {
+    content: 'Linux';
+}
+
+.vim:hover ~ label::after {
+    content: 'Vim & NeoVim';
+}
+
+.vscode:hover ~ label::after {
+    content: 'VS Code';
+}
+
+.portuguese:hover ~ label::after {
+    content: 'Português';
+}
+
+.spanish:hover ~ label::after {
+    content: 'Español';
+}
+
+.english:hover ~ label::after {
+    content: 'English';
+}
+
+.german:hover ~ label::after {
+    content: 'Deutsch';
+}
+
+
+
+
+
+/* FOOTER */
+
+
+footer {
+    height: 10rem;
+
+    background-color: rgb(88, 88, 88);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+footer div {
+    margin: 2rem;
+}
+
+.media_end {
+    position: relative;
+    top: 1rem;
+
+    cursor: pointer;
+
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.media_end:hover {
+    filter: invert(35%);
+}
+
+footer p {
+    position: relative;
+
+    color: antiquewhite;
+    margin: 2rem;
+}
+
+/* ANIMATIONS */
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slide-in {
+    0% {
+        transform: translateX(-25%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+@keyframes shadow {
+    0% {
+        box-shadow: 0 0 0 rgba(0, 0, 0, .5);
+    }
+
+    100% {
+        box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, .5);
+    }
+}
+
+@keyframes not-shadow {
+    0% {
+        box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, .5);
+    }
+    100% {
+        box-shadow: 0 0 0 rgba(0, 0, 0, .5);
+    }
+}
+
+
+
+/* SCREEN RESPONSIVE */
+
+@media only screen and (max-width: 800px) {
+
+    html, body {
+        color: white;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        background-color: #1e3c6e;
+    
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+
+    /* HEADER */
+
+
+    header {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        justify-content: center;
+        align-items: center;
+        padding: 0.3rem;
+    }
+
+    .social-media {
+        position: relative;
+        left: -7%;
+
+        width: 90%;
+    }
+
+    .media {
+        margin: 1%;
+    }
+
+    .position-info {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+        position: relative;
+        left: -3.5%;
+    }
+
+    header div p:hover {
+        text-decoration: underline;
+    } 
+
+    #menuList {
+        position: absolute;
+        top: 75%;
+        width: 100%;
+        list-style: none;
+        background-color: #2b5398;
+        justify-content: center;
+        align-items: center;
+        text-align: right;
+    }
+
+    #menuList p {
+        margin-right: 6%;
+    }
+
+
+    /* MAIN */
+
+
+    main {
+        height: 75vh;
+        padding: 10%;
+    }
+
+    .me {
+        height: 20rem;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .name {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .name h1 {
+        position: relative;
+        font-size: 2.2rem;
+        text-align: center;
+    }
+
+    .name span {
+        position: relative;
+    }
+
+    main img {
+        position: relative;
+        width: 12rem;
+    }
+
+    .me {
+        background-image: linear-gradient( #1e3c6e, grey);
+        height: 20rem;
+        background-position: center;
+    }
+
+    .about {
+        position: relative;
+        top: -2rem;
+        height: 29rem;
+        z-index: 2;
+    }
+
+    .about div {
+        height: 30rem;
+    }
+
+    .me:hover img {
+        display: none;
+    }
+
+    /* HISTORY */
+
+    .history div {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        height: 28rem;
+    }
+
+    .history .csjb , .history .cisco {
+        position: absolute;
+        top: 0px;
+    }
+
+    .history .germany {
+        position: absolute;
+        top: 10px;
+    }
+
+    .history .iscte {
+        display: none;
+    }
+
+    .history .iscte-mobile {
+        display: block;
+        position: absolute;
+        top: 90px;
+    }
+
+    .history .fortytwo {
+        position: absolute;
+        top: -30px;
+        width: 10px;
+    }
+
+    .history .reveal .fortytwotext {
+        position: absolute;
+        top: 30px;
+    }
+
+    .history p {
+        position: relative;
+        top: 80px;
+        width: 350px;
+        font-size: 1.1rem;
+    }
+
+    .history .link {
+        position: relative;
+        top: 75px;
+    }
+
+    /* KNOWLEDGE */
+
+    .all {
+        position: relative;
+        height: 30rem;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin: 2rem;
+    }
+
+    .item.closed:hover {
+        position: relative;
+        
+        width: 12rem;
+        height: 5rem;
+        font-size: 1.5rem;
+    
+        justify-content: flex-start;
+        align-items: center;
+        text-align: center;
+    
+        border: solid 0.4rem grey;
+        border-radius: 1rem;
+        padding: 0.5rem;
+        transition: 1.5s ease;
+    }
+
+    .item.opened:hover {
+        width: 15rem;
+        height: 26rem;
+        background-color: rgba(255, 255, 255, 10%);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .item.closed:hover .logos {
+        display: none;
+    }
+
+    .item:hover .skills.logos {
+        position: relative;
+        top: 40px;
+    }
+
+    .item:hover .tools.logos {
+        position: relative;
+        top: 30px;
+    }
+
+    .item:hover .lang.logos {
+        position: relative;
+        top: 65px;
+    }
+
+    .tools.logos {
+        grid-template-columns: repeat(2, 5rem);
+        row-gap: 3rem;
+        column-gap: 0.5rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+@media only screen and (max-width: 370px) {
+    .history p {
+        position: relative;
+        top: 80px;
+        width: 300px;
+        font-size: 1.1rem;
+    }
+
+    .history .csjb {
+        position: absolute;
+        top: -20px;
+    }
+
+    .history .germany {
+        position: absolute;
+        top: 0;
+    }
+}
+
+/* REVEALS */
+
+@media only screen and (min-width: 1000px) {
+
+    .odd img {
+        position: relative;
+        transform: translateX(-50px);
+        opacity: 0;
+        transition: all 1s ease;
+    }
+
+    .odd.active_odd img {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+
+    .odd p {
+        position: relative;
+        transform: translateY(150px);
+        opacity: 0;
+        transition: all 1s ease;
+    }
+
+    .odd.active_odd p {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+
+    .even img {
+        position: relative;
+        transform: translateX(50px);
+        opacity: 0;
+        transition: all 1s ease;
+    }
+
+    .even.active_even img {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+
+    .even p {
+        position: relative;
+        transform: translateY(150px);
+        opacity: 0;
+        transition: all 1s ease;
+    }
+
+    .even.active_even p {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+
+    .knowledge .reveal {
+        position: relative;
+        transform: translateY(100px);
+        opacity: 0;
+        transition: all 1s ease;
+    }
+    
+    .knowledge .reveal.active {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+
+}
