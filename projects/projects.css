@@ -442,10 +442,37 @@ footer p {
     }
 }
 
-@media only screen and (min-width: 500px) and (max-width: 800px) {
+@media only screen and (min-width: 800px) and (max-width: 1150px) {
 
-    .project {
-        
+    html, body {
+        color: white;
+        font-family: 'AccordAlternate-Regular', system-ui;        
+        background-color: #1e3c6e;
+    
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+
+    main {
+        height: 80rem;
+    }
+
+    main h1 {
+        position: relative;
+        top: -3rem;
+    }
+
+    .grid {
+        position: relative;
+        width: 100%;
+    
+        display: grid;
+        grid-template-columns: repeat(3, 14.5rem);
+        justify-content: center;
+        align-items: center;
     }
 
 }

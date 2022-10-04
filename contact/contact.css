@@ -18,7 +18,7 @@ html, body {
 
 
 header {
-    position: sticky;
+    position: fixed;
     width: 100%;
     top: 0;
     z-index: 999;
@@ -26,22 +26,25 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     height: 5rem;
+    padding: 0.5rem;
+
 }
 
 .social-media {
     position: relative;
-    width: 35%;
+    width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 }
 
 .media {
     border: transparent;
     background-color: transparent;
-    margin: 4%;
+    margin: 5%;
     cursor: pointer;
 }
 
@@ -51,11 +54,10 @@ header {
 
 .position-info {
     position: relative;
-    width: 35%;
-
+    width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
 }
 
@@ -78,12 +80,20 @@ header {
     background-size: 100% 3px;
 }
 
-#menuList {
+.menu {
     display: none;
 }
 
 .menu-icon {
     display: none;
+}
+
+#menuList {
+    display: none;
+}
+
+.main_and_history {
+    background-color: black;
 }
 
 /* MAIN */
@@ -94,15 +104,15 @@ main {
     justify-content: center;
     align-items: center;
 
-    height: 80vh;
-    background-image: linear-gradient(#1e3c6e, #2b5398, grey);
+    height: 100vh;
+    background-image: linear-gradient(#1e3c6e 50%, #2b5398, grey);
 
     padding: 5%;
 }
 
 main h1 {
     position: absolute;
-    top: 5rem;
+    top: 15%;
 }
 
 form {
@@ -114,10 +124,6 @@ form {
     width: 30%;
     padding: 5%;
     border-radius: 30px;
-}
-
-input {
-    height: 1.4rem;
 }
 
 input {
@@ -144,8 +150,8 @@ textarea {
     border: none;
     border-radius: 30px;
 
-    width: 9rem;
-    height: 6rem;
+    width: 40%;
+    height: 30%;
     margin: 5%;
 
     background-color:#1e3c6e;
@@ -220,24 +226,6 @@ footer .name {
 
     /* HEADER */
 
-
-    header {
-        position: relative;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        justify-content: center;
-        align-items: center;
-        padding: 0.3rem;
-    }
-
-    .social-media {
-        position: relative;
-        left: -7%;
-
-        width: 90%;
-    }
-
     .media {
         margin: 1%;
     }
@@ -247,18 +235,30 @@ footer .name {
     }
 
     .menu-icon {
-        display: block;
-        position: relative;
-        left: -3.5%;
+        display: inline;
     }
 
     header div p:hover {
         text-decoration: underline;
     } 
 
+    .menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+        width: 100%;
+    }
+
+    .menu-icon {
+        display: flex;
+        justify-content: flex-end;
+        margin: 20%;
+    }
+
     #menuList {
         position: absolute;
-        top: 75%;
+        top: 99%;
         width: 100%;
         list-style: none;
         background-color: #2b5398;
@@ -271,6 +271,7 @@ footer .name {
         margin-right: 6%;
     }
 
+
     /* MAIN */
 
     main h1 {
@@ -281,20 +282,6 @@ footer .name {
     main form {
         width: 80%;
         background-color: transparent;
-    }
-
-
-    #btn {
-        border: none;
-        border-radius: 30px;
-    
-        width: 9rem;
-        height: 6rem;
-        margin: 5%;
-    
-        background-color:#1e3c6e;
-        color: white;
-        transition: 500ms ease;
     }
 
     #btn:hover {
