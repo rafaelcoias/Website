@@ -53,7 +53,22 @@ function openmenu() {
     }
 }
 
+function openAboutMe() {
+    var about = document.getElementById("about-me");
+
+    if (about.classList.contains("closed")) {
+        about.classList.remove('closed');
+        about.classList.add('opened');
+    }
+    else if (about.classList.contains("opened")) {
+        about.classList.remove('opened');
+        about.classList.add('closed');
+    }
+}
+
 function displaySkills() {
+    if (screen.width > 800)
+        return ;
     if (itemskills.classList.contains("opened")) {  
         itemtools.style.display = "block";
         itemlang.style.display = "block";
@@ -69,6 +84,8 @@ function displaySkills() {
 }
 
 function displayTools() {
+    if (screen.width > 800)
+        return ;
     if (itemtools.classList.contains("opened")) {
         itemskills.style.display = "block";
         itemlang.style.display = "block";
@@ -84,6 +101,8 @@ function displayTools() {
 }
 
 function displayLang() {
+    if (screen.width > 800)
+        return ;
     if (itemlang.classList.contains("opened")) {
         itemtools.style.display = "block";
         itemskills.style.display = "block";

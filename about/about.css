@@ -25,23 +25,25 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     height: 5rem;
+    padding: 0.5rem;
 
 }
 
 .social-media {
     position: relative;
-    width: 35%;
+    width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 }
 
 .media {
     border: transparent;
     background-color: transparent;
-    margin: 4%;
+    margin: 5%;
     cursor: pointer;
 }
 
@@ -51,11 +53,10 @@ header {
 
 .position-info {
     position: relative;
-    width: 35%;
-
+    width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
 }
 
@@ -78,11 +79,15 @@ header {
     background-size: 100% 3px;
 }
 
-#menuList {
+.menu {
     display: none;
 }
 
 .menu-icon {
+    display: none;
+}
+
+#menuList {
     display: none;
 }
 
@@ -125,27 +130,6 @@ main img {
     background-repeat: no-repeat;
     background-position: left;
     transition: background-size 1s ease;
-}
-
-.me:hover {
-    background-size: 100% 100%;
-}
-
-.me:hover .about {
-    display: inline;
-}
-
-.me:hover .name {
-    display: none;
-}
-
-.me:hover .about .title {
-    animation: slide-in 1s forwards 800ms;
-    background-size: 75% 3px;
-}
-
-.me:hover img {
-    animation: not-shadow 1s forwards;
 }
 
 main h1 {
@@ -206,25 +190,7 @@ main span {
     opacity: 0;
 }
 
-.me:hover .about .one {
-    animation: slide-in 1s forwards 500ms;
-}
 
-.me:hover .about .two {
-    animation: slide-in 1s forwards 600ms;
-}
-
-.me:hover .about .three {
-    animation: slide-in 1s forwards 700ms;
-}
-
-.me:hover .about .four {
-    animation: slide-in 1s forwards 800ms;
-}
-
-.me:hover .about .five {
-    animation: slide-in 1s forwards 900ms;
-}
 
 /* HISTORY */
 
@@ -529,6 +495,12 @@ main span {
 
 
 
+
+
+
+
+
+
 /* FOOTER */
 
 
@@ -616,6 +588,8 @@ footer p {
 
 /* SCREEN RESPONSIVE */
 
+/* REVEAL NORMAL MOBILE */
+
 @media only screen and (max-width: 800px) {
 
     html, body {
@@ -632,24 +606,6 @@ footer p {
 
     /* HEADER */
 
-
-    header {
-        position: relative;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        justify-content: center;
-        align-items: center;
-        padding: 0.3rem;
-    }
-
-    .social-media {
-        position: relative;
-        left: -7%;
-
-        width: 90%;
-    }
-
     .media {
         margin: 1%;
     }
@@ -659,18 +615,30 @@ footer p {
     }
 
     .menu-icon {
-        display: block;
-        position: relative;
-        left: -3.5%;
+        display: inline;
     }
 
     header div p:hover {
         text-decoration: underline;
     } 
 
+    .menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+        width: 100%;
+    }
+
+    .menu-icon {
+        display: flex;
+        justify-content: flex-end;
+        margin: 20%;
+    }
+
     #menuList {
         position: absolute;
-        top: 75%;
+        top: 99%;
         width: 100%;
         list-style: none;
         background-color: #2b5398;
@@ -688,7 +656,7 @@ footer p {
 
 
     main {
-        height: 75vh;
+        height: 100vh;
         padding: 10%;
     }
 
@@ -699,7 +667,78 @@ footer p {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+
+        background-image: linear-gradient( #1e3c6e, grey);
+        background-position: center;
     }
+
+    .me.opened {
+        background-size: 100% 100%;
+    }
+
+    .me.opened img {
+        display: none;
+    }
+
+    .me.opened .name {
+        display: none;
+    }
+
+    .me.opened .about {
+        display: inline;
+    }
+
+    .me.opened .about .title {
+        animation: slide-in 1s forwards 800ms;
+    }
+
+    .me.opened .about .one {
+        animation: slide-in 1s forwards 500ms;
+    }
+    
+    .me.opened .about .two {
+        animation: slide-in 1s forwards 600ms;
+    }
+    
+    .me.opened .about .three {
+        animation: slide-in 1s forwards 700ms;
+    }
+    
+    .me.opened .about .four {
+        animation: slide-in 1s forwards 800ms;
+    }
+    
+    .me.opened .about .five {
+        animation: slide-in 1s forwards 900ms;
+    }
+
+    .me.closed {
+        background-size: 0% 100%;
+    }
+
+    .me.closed img {
+        display: inline;
+    }
+
+    .me.closed .name {
+        display: inline;
+    }
+
+    .me.closed .about {
+        display: none;
+    }
+
+    .me.closed .about .title {
+        opacity: 0;
+    }
+
+    .me.closed .about p {
+        opacity: 0;    
+    }
+
+    
+
+
 
     .name {
         width: 100%;
@@ -724,12 +763,6 @@ footer p {
         width: 12rem;
     }
 
-    .me {
-        background-image: linear-gradient( #1e3c6e, grey);
-        height: 20rem;
-        background-position: center;
-    }
-
     .about {
         position: relative;
         top: -2rem;
@@ -739,10 +772,6 @@ footer p {
 
     .about div {
         height: 30rem;
-    }
-
-    .me:hover img {
-        display: none;
     }
 
     /* HISTORY */
@@ -829,7 +858,7 @@ footer p {
         transition: 1.5s ease;
     }
 
-    .item.opened:hover {
+    .item.opened {
         width: 15rem;
         height: 26rem;
         background-color: rgba(255, 255, 255, 10%);
@@ -867,6 +896,8 @@ footer p {
 
 }
 
+/* REVEAL SMALL DEVICE */
+
 @media only screen and (max-width: 370px) {
     .history p {
         position: relative;
@@ -886,9 +917,97 @@ footer p {
     }
 }
 
-/* REVEALS */
+/* REVEAL FOR MOUSE */
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 800px) {
+
+    /* MAIN */
+
+    .me:hover {
+        background-size: 100% 100%;
+    }
+    
+    .me:hover .about {
+        display: inline;
+    }
+    
+    .me:hover .name {
+        display: none;
+    }
+    
+    .me:hover .about .title {
+        animation: slide-in 1s forwards 800ms;
+        background-size: 75% 3px;
+    }
+    
+    .me:hover img {
+        animation: not-shadow 1s forwards;
+    }    
+
+    .me:hover .about .one {
+        animation: slide-in 1s forwards 500ms;
+    }
+    
+    .me:hover .about .two {
+        animation: slide-in 1s forwards 600ms;
+    }
+    
+    .me:hover .about .three {
+        animation: slide-in 1s forwards 700ms;
+    }
+    
+    .me:hover .about .four {
+        animation: slide-in 1s forwards 800ms;
+    }
+    
+    .me:hover .about .five {
+        animation: slide-in 1s forwards 900ms;
+    }
+
+
+}
+
+/* REVEAL MEDIUM DEVICE */
+
+@media only screen and (min-width: 800px) and (max-width: 1150px) {
+
+    html, body {
+        color: white;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        background-color: #1e3c6e;
+    
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+
+    header {
+        width: 100vw;
+    }
+
+    /* HISTORY */
+
+    .history .text p {
+        width: 80%;
+    }
+
+    .history img {
+        margin: 2rem;
+    }
+ 
+
+    
+
+}
+
+
+/* REVEAL BIG DEVICE */
+
+@media only screen and (min-width: 1150px) {
+
+    /* KNOWLEDGE */
 
     .odd img {
         position: relative;

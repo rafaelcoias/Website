@@ -23,16 +23,18 @@
             <label class="info" onclick="window.open('../projects/projects.html')">Projects</label>
             <label class="info" onclick="window.open('../contact/contact.html')">Contact</label>
         </div>
-        <img class="menu-icon" src="../images/others/menu-button.png" onclick="openmenu()">
-        <div id="menuList">
-            <p onclick="window.open('../projects/projects.html')">PROJECTS</p>
-            <p onclick="window.open('../contact/contact.html')">CONTACTS</p>
-        </div>
+        <div class="menu">
+            <img class="menu-icon" src="../images/others/menu-button.png" onclick="openmenu()">
+            <div id="menuList">
+                <p onclick="window.open('../projects/projects.html')">PROJECTS</p>
+                <p onclick="window.open('../contact/contact.html')">CONTACTS</p>
+            </div>
+        </div>        
     </header>
     <section class="main_and_history">
         <!--    MAIN      -->
         <main>
-            <div class="me">
+            <div class="me closed" id="about-me" onclick="openAboutMe()">
                 <img src="../images/others/me.png">
                 <div class="name">
                     <h1>Rafael Cóias</h1>
