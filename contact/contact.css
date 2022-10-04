@@ -1,9 +1,10 @@
+@import url("../fonts/AccordAlternate-Regular/style.css");
+
 /*  ALL */
 
 html, body {
     color: white;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background-color: #1e3c6e;
+    font-family: 'AccordAlternate-Regular', system-ui;    background-color: #1e3c6e;
 
     width: 100%;
     height: 100%;
@@ -208,8 +209,7 @@ footer .name {
 
     html, body {
         color: white;
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        background-color: #1e3c6e;
+        font-family: 'AccordAlternate-Regular', system-ui;        background-color: #1e3c6e;
     
         width: 100%;
         height: 100%;

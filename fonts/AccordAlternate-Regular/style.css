@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Accord Alternate';
+    src: local('Accord Alternate Regular'), local('Accord-Alternate-Regular'),
+        url('AccordAlternate-Regular.woff2') format('woff2'),
+        url('AccordAlternate-Regular.woff') format('woff'),
+        url('AccordAlternate-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
