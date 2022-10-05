@@ -1,6 +1,7 @@
 window.addEventListener('scroll', reveal);
 
 var menuList = document.getElementById("menuList");
+
 var itemskills = document.getElementById("itemskills");
 var itemtools = document.getElementById("itemtools");
 var itemlang = document.getElementById("itemlang");

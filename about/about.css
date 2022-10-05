@@ -9,6 +9,8 @@ html, body {
     height: 100%;
     margin: 0;
     padding: 0;
+
+    scroll-behavior: smooth;
 }
 
 
@@ -505,7 +507,7 @@ main span {
 
 
 footer {
-    height: 10rem;
+    height: 12rem;
 
     background-color: rgb(88, 88, 88);
 
@@ -534,12 +536,31 @@ footer div {
     filter: invert(35%);
 }
 
+.to-top {
+    background-color: white;
+    width: 4%;
+    border-radius: 100vmax;
+    text-decoration: none;
+    color: rgb(0, 141, 188);
+    transition: 300ms ease;
+    font-size: 15px;
+}
+
+.to-top:hover {
+    cursor: pointer;
+    color: white;
+    background-color: rgb(0, 141, 188);;
+}
+
 footer p {
     position: relative;
 
     color: antiquewhite;
     margin: 2rem;
 }
+
+
+
 
 /* ANIMATIONS */
 

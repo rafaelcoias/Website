@@ -2,15 +2,15 @@
 
 html, body {
     color: white;
-    font-family: system-ui;    
+    font-family: system-ui;            
     background-color: #1e3c6e;
 
     width: 100%;
     height: 100%;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
-
 
 /* HEADER */
 
@@ -18,7 +18,7 @@ html, body {
 
 header {
     position: fixed;
-    width: 100%;
+    width: 100vw;
     top: 0;
     z-index: 999;
     background-image: linear-gradient(#1e3c6e, #1e3c6e);
@@ -110,8 +110,8 @@ main {
 }
 
 main h1 {
-    position: absolute;
-    top: 15%;
+    position: relative;
+    top: -3rem;
 }
 
 form {
@@ -169,59 +169,8 @@ textarea {
 }
 
 .modal {
-    position: absolute;
-    left: 88rem;
-    top: 10rem;
-
-    width: 21%;
-    height: 6%;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    display: none;
 }
-
-.modal img {
-    margin: 3%;
-}
-
-.modal p {
-    margin: 3%;
-}
-
-#notification {
-    color: rgb(148, 217, 148);
-    background-color: rgba(30, 183, 30, 0.7);
-}
-
-#warning {
-    color: rgb(255, 202, 110);
-    background-color: rgb(199, 135, 24);
-}
-
-#emailWarning {
-    color: rgb(255, 202, 110);
-    background-color: rgb(199, 135, 24);
-}
-
-@keyframes modal-in {
-    0% {
-        transform: translateX(0px);
-    }
-    33% {
-        transform: translateX(-23rem);
-    }
-    66% {
-        transform: translateX(-23rem);
-    }
-    100% {
-        transform: translateX(0px);
-    }
-}
-
-
-
 
 
 
@@ -285,18 +234,6 @@ footer .name {
 /* SCREEN RESPONSIVE */
 
 @media only screen and (max-width: 800px) {
-
-    html, body {
-        color: white;
-        font-family: system-ui;            
-        background-color: #1e3c6e;
-    
-        width: 100%;
-        height: 100%;
-        margin: 0;
-        padding: 0;
-        overflow-x: hidden;
-    }
 
     /* HEADER */
 
@@ -380,6 +317,51 @@ footer .name {
     #btn:hover {
         animation: click-button 1000ms forwards;
     }
+
+}
+
+/* BIG SCREEN */ 
+
+@media only screen and (min-width:800px) {
+
+    .modal {
+        display: inline;
+        position: absolute;
+        left: 100vw;
+        top: 20vh;
+    
+        width: 21%;
+        height: 6%;
+    
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .modal img {
+        margin: 3%;
+    }
+    
+    .modal p {
+        margin: 3%;
+    }
+    
+    #notification {
+        color: rgb(148, 217, 148);
+        background-color: rgba(30, 183, 30, 0.7);
+    }
+    
+    #warning {
+        color: rgb(255, 202, 110);
+        background-color: rgb(199, 135, 24);
+    }
+    
+    #emailWarning {
+        color: rgb(255, 202, 110);
+        background-color: rgb(199, 135, 24);
+    }
+    
 }
 
 /* ANIMATIONS */
@@ -392,5 +374,20 @@ footer .name {
     100% {
         color: white;
         background-color: #1e3c6e;
+    }
+}
+
+@keyframes modal-in {
+    0% {
+        transform: translateX(0px);
+    }
+    33% {
+        transform: translateX(-120%);
+    }
+    66% {
+        transform: translateX(-120%);
+    }
+    100% {
+        transform: translateX(0px);
     }
 }
