@@ -5,8 +5,6 @@ var itemskills = document.getElementById("itemskills");
 var itemtools = document.getElementById("itemtools");
 var itemlang = document.getElementById("itemlang");
 
-
-
 menuList.style.display = "none";
 
 function reveal(){
@@ -43,8 +41,6 @@ function reveal(){
 }
 
 function openmenu() {
-    var menuIcon = document.getElementById("menu-button");
-
     if (menuList.style.display == "none") {
         menuList.style.display = "block"; 
     }

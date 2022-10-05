@@ -26,18 +26,30 @@
         <div class="menu">
             <img class="menu-icon" src="../images/others/menu-button.png" onclick="openmenu()">
             <div id="menuList">
-                <p onclick="window.open('../about/index.html')">ABOUT</p>
-                <p onclick="window.open('../projects/projects.html')">PROJECTS</p>
-                <p onclick="window.open('../contact/contact.html')">CONTACTS</p>
+                <p class="menu-one" onclick="window.open('../about/index.html')">ABOUT</p>
+                <p class="menu-two" onclick="window.open('../projects/projects.html')">PROJECTS</p>
+                <p class="menu-three" onclick="window.open('../contact/contact.html')">CONTACTS</p>
             </div>
-        </div>     
+        </div>       
     </header>
     <!--    MAIN      -->
     <main>
         <h1>Lets's Talk !</h1>
-        <form onsubmit="sendEmail(); return false;">
+        <div class="modal" id="notification">
+            <img src="../images/others/checked.png" width="20rem">
+            <p>Email Sent Succesfuly !</p>
+        </div>
+        <div class="modal" id="warning">
+            <img src="../images/others/warning.png" width="24rem">
+            <p>Fill All The Required Camps</p>
+        </div>
+        <div class="modal" id="emailWarning">
+            <img src="../images/others/warning.png" width="24rem">
+            <p>Please Write A Valid Email</p>
+        </div>
+        <form id="form" onsubmit="sendEmail(); return false;">
             <input placeholder="Name" id="name" type="text" autocomplete="off">
-            <input placeholder="Email" id="email" type="text" autocomplete="off">
+            <input placeholder="your-email@example.com" id="email" type="text" autocomplete="off">
             <input placeholder="Subject" id="subject" type="text" autocomplete="off">
             <textarea placeholder="Message" id="message" cols="30" rows="10"></textarea>
             <button id="btn" type="submit">Send</button>
@@ -51,4 +63,6 @@
         </div>
         <p class="name">&copy; Rafael Cóias 2022<br> Created and Designed by Rafael Cóias</p>
     </footer>
-    <script src="../images/social-media/"
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+</body>
+</html>

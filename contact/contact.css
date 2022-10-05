@@ -1,10 +1,9 @@
-@import url("../fonts/AccordAlternate-Regular/style.css");
-
 /*  ALL */
 
 html, body {
     color: white;
-    font-family: 'AccordAlternate-Regular', system-ui;    background-color: #1e3c6e;
+    font-family: system-ui;    
+    background-color: #1e3c6e;
 
     width: 100%;
     height: 100%;
@@ -133,6 +132,7 @@ input {
     margin: 5%;
     width: 100%;
     height: 15%;
+    border-radius: 3px;
 }
 
 textarea {
@@ -143,12 +143,13 @@ textarea {
     background-color: rgb(203, 203, 203);
     color: black;
     border: none;
+    border-radius: 3px;
 }
 
 
 #btn {
     border: none;
-    border-radius: 30px;
+    border-radius: 100vmax;
 
     width: 40%;
     height: 30%;
@@ -166,6 +167,63 @@ textarea {
     background-color: white;
     color: #2b5398;
 }
+
+.modal {
+    position: absolute;
+    left: 88rem;
+    top: 10rem;
+
+    width: 21%;
+    height: 6%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal img {
+    margin: 3%;
+}
+
+.modal p {
+    margin: 3%;
+}
+
+#notification {
+    color: rgb(148, 217, 148);
+    background-color: rgba(30, 183, 30, 0.7);
+}
+
+#warning {
+    color: rgb(255, 202, 110);
+    background-color: rgb(199, 135, 24);
+}
+
+#emailWarning {
+    color: rgb(255, 202, 110);
+    background-color: rgb(199, 135, 24);
+}
+
+@keyframes modal-in {
+    0% {
+        transform: translateX(0px);
+    }
+    33% {
+        transform: translateX(-23rem);
+    }
+    66% {
+        transform: translateX(-23rem);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+
+
+
+
 
 
 /* FOOTER */
@@ -209,13 +267,29 @@ footer .name {
     margin-top: 1rem;
 }
 
+
+/* ANIMATIONS */
+
+@keyframes slide-left {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+
 /* SCREEN RESPONSIVE */
 
 @media only screen and (max-width: 800px) {
 
     html, body {
         color: white;
-        font-family: 'AccordAlternate-Regular', system-ui;        background-color: #1e3c6e;
+        font-family: system-ui;            
+        background-color: #1e3c6e;
     
         width: 100%;
         height: 100%;
@@ -260,15 +334,34 @@ footer .name {
         position: absolute;
         top: 99%;
         width: 100%;
-        list-style: none;
+        height: 120px;
+
         background-color: #2b5398;
         justify-content: center;
         align-items: center;
         text-align: right;
+        animation: fade-in 700ms ease;
+        transition: background-size 500ms ease;
     }
 
     #menuList p {
+        opacity: 0;
         margin-right: 6%;
+    }
+
+    #menuList p.menu-one {
+        animation: slide-left 1000ms ease 100ms;
+        animation-fill-mode: forwards;
+    }
+
+    #menuList p.menu-two {
+        animation: slide-left 1000ms ease 250ms;
+        animation-fill-mode: forwards;
+    }
+
+    #menuList p.menu-three {
+        animation: slide-left 1000ms ease 400ms;
+        animation-fill-mode: forwards;
     }
 
 
