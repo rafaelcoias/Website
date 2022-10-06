@@ -898,7 +898,7 @@ footer p {
         margin: 2rem;
     }
 
-    .item.closed:hover {
+    .item.closed {
         position: relative;
         
         width: 12rem;
@@ -924,7 +924,13 @@ footer p {
         justify-content: space-around;
     }
 
-    .item.closed:hover .logos {
+    .item.opened .logos {
+        display: grid;
+        opacity: 0;
+        animation: fade-in 1s forwards 0.5s;
+    }
+
+    .item.closed .logos {
         display: none;
     }
 
