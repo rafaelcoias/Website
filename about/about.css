@@ -915,6 +915,10 @@ footer p {
         transition: 1.5s ease;
     }
 
+    .item.closed .logos {
+        display: none;
+    }
+
     .item.opened {
         width: 15rem;
         height: 26rem;
@@ -924,27 +928,33 @@ footer p {
         justify-content: space-around;
     }
 
+    .item.opened p {
+        opacity: 0;
+        animation: fade-in 1s forwards 0.5s;
+    }
+
+    .item.opened img {
+        animation: fade-in 1s forwards;
+        animation-delay: 0.5s;
+    }
+
     .item.opened .logos {
         display: grid;
         opacity: 0;
         animation: fade-in 1s forwards 0.5s;
     }
 
-    .item.closed .logos {
-        display: none;
-    }
-
-    .item:hover .skills.logos {
+    .item.opened .skills.logos {
         position: relative;
         top: 40px;
     }
 
-    .item:hover .tools.logos {
+    .item.opened .tools.logos {
         position: relative;
         top: 30px;
     }
 
-    .item:hover .lang.logos {
+    .item.opened .lang.logos {
         position: relative;
         top: 65px;
     }
