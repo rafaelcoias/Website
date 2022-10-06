@@ -347,12 +347,6 @@ main span {
     display: none;
 }
 
-.item:hover .logos {
-    display: grid;
-    opacity: 0;
-    animation: fade-in 1s forwards 0.5s;
-}
-
 .item img {
     opacity: 0;
     margin: 5px;
@@ -540,7 +534,8 @@ footer div {
     filter: invert(35%);
 }
 
-.to-top {
+#to-top {
+    display: none;
     background-color: white;
     width: 3.5rem;
     border-radius: 100vmax;
@@ -551,7 +546,7 @@ footer div {
     font-size: 15px;
 }
 
-.to-top:hover {
+#to-top:hover {
     cursor: pointer;
     color: white;
     background-color: rgb(0, 141, 188);;
@@ -690,17 +685,17 @@ footer p {
     }
 
     #menuList p.menu-one {
-        animation: slide-left 1000ms ease 100ms;
+        animation: slide-left 1000ms ease 50ms;
         animation-fill-mode: forwards;
     }
 
     #menuList p.menu-two {
-        animation: slide-left 1000ms ease 250ms;
+        animation: slide-left 1000ms ease 200ms;
         animation-fill-mode: forwards;
     }
 
     #menuList p.menu-three {
-        animation: slide-left 1000ms ease 400ms;
+        animation: slide-left 1000ms ease 350ms;
         animation-fill-mode: forwards;
     }
 
@@ -1026,6 +1021,19 @@ footer p {
         animation: slide-in 1s forwards 900ms;
     }
 
+    /* KNOWLEDGE */
+
+    .item:hover .logos {
+        display: grid;
+        opacity: 0;
+        animation: fade-in 1s forwards 0.5s;
+    }
+
+    /* FOOTER */
+
+    #to-top {
+        display: inline;
+    }
 
 }
 

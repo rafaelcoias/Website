@@ -57,13 +57,13 @@ function sendEmail() {
 
 
 
- /*   Email.send({
+    Email.send({
         SecureToken : "01dd3e9b-a4ed-4397-a45e-06124742f27b",
         To : 'rafaelmsppcoias@gmail.com',
         From : "rafaelmsppcoias@gmail.com",
         Subject : subject,
         Body : body
-    })*/
+    })
     document.getElementById("form").reset();
     document.getElementById("notification").style.animation = "modal-in 3500ms ease forwards";
     setTimeout("location.reload(true)", 3000);

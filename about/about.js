@@ -113,3 +113,13 @@ function displayLang() {
         itemlang.classList.add('opened');   
     }
 }
+
+const btnToTop = document.querySelector("#to-top");
+
+btnToTop.addEventListener("click", function () {
+    window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: "smooth"
+    });
+});
