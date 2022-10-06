@@ -625,7 +625,7 @@ footer p {
 
     html, body {
         color: white;
-        font-family: system-ui;        
+        font-family: my-font;        
         background-color: #1e3c6e;
     
         width: 100%;
@@ -1031,7 +1031,7 @@ footer p {
 
     html, body {
         color: white;
-        font-family: system-ui;        
+        font-family: my-font;        
         background-color: #1e3c6e;
     
         width: 100%;
