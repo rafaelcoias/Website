@@ -70,6 +70,7 @@ header {
     transition: background-size 300ms ease;
     padding: 0.6rem;
 
+    font-family: my-font-B;
     text-decoration: none;
 
     margin: 2.2rem;
@@ -135,6 +136,7 @@ main img {
 }
 
 main h1 {
+    font-family: my-font-B;
     font-size: 3rem;
     opacity: 0;
     animation: slide-in 1.5s forwards 0.7s;
@@ -207,6 +209,7 @@ main span {
     top: 1rem;
 
     font-size: 2rem;
+    font-family: my-font-B;
     text-align: center;
 
     padding: 2rem;
@@ -292,6 +295,7 @@ main span {
     position: relative;
     top: 2rem;
 
+    font-family: my-font-B;
     font-size: 2rem;
 }
 
@@ -538,11 +542,12 @@ footer div {
 
 .to-top {
     background-color: white;
-    width: 4%;
+    width: 3.5rem;
     border-radius: 100vmax;
     text-decoration: none;
     color: rgb(0, 141, 188);
     transition: 300ms ease;
+    font-family: my-font-B;
     font-size: 15px;
 }
 
@@ -624,8 +629,7 @@ footer p {
 @media only screen and (max-width: 800px) {
 
     html, body {
-        color: white;
-        font-family: my-font;        
+        color: white;     
         background-color: #1e3c6e;
     
         width: 100%;
@@ -1030,8 +1034,7 @@ footer p {
 @media only screen and (min-width: 800px) and (max-width: 1150px) {
 
     html, body {
-        color: white;
-        font-family: my-font;        
+        color: white;    
         background-color: #1e3c6e;
     
         width: 100%;

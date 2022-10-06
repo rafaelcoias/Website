@@ -2,7 +2,7 @@
 
 html, body {
     color: white;
-    font-family: system-ui;   
+    font-family: my-font;   
     background-color: #1e3c6e;
 
     width: 100%;
@@ -68,6 +68,7 @@ header {
     transition: background-size 300ms ease;
     padding: 0.6rem;
 
+    font-family: my-font-B;
     text-decoration: none;
 
     margin: 2.2rem;
@@ -114,6 +115,7 @@ main h1 {
     position: absolute;
     top: 7rem;
 
+    font-family: my-font-B;
     opacity: 0;
     padding: 0.6rem;
     text-align: center;
@@ -331,8 +333,7 @@ footer p {
 @media only screen and (max-width: 800px) {
 
     html, body {
-        color: white;
-        font-family: system-ui;   
+        color: white; 
         background-color: #1e3c6e;
     
         width: 100%;
@@ -474,8 +475,7 @@ footer p {
 @media only screen and (min-width: 800px) and (max-width: 1150px) {
 
     html, body {
-        color: white;
-        font-family: system-ui;   
+        color: white; 
         background-color: #1e3c6e;
     
         width: 100%;
