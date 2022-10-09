@@ -115,6 +115,7 @@ main {
 main img {
     position: relative;
     width: 16rem;
+    z-index: 2;
     animation: shadow 1s forwards 0.7s;
 }
 
