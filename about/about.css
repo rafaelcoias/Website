@@ -206,7 +206,7 @@ main span {
 
 .history h2 {
     position: relative;
-    top: 1rem;
+    top: -1rem;
 
     font-size: 2rem;
     font-family: my-font-B;
@@ -327,6 +327,7 @@ main span {
     border-radius: 1rem;
     padding: 0.5rem;
     transition: 1.5s ease;
+    z-index: 1;
 }
 
 .item:hover {
@@ -849,7 +850,12 @@ footer p {
 
     .history .germany {
         position: absolute;
-        top: 10px;
+        top: 15px;
+    }
+
+    .history .german.text {
+        position: absolute;
+        top: 25px;
     }
 
     .history .iscte {

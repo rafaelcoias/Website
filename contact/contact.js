@@ -11,6 +11,11 @@ function openmenu() {
     }
 }
 
+function resetModal() {
+    document.getElementById("warning").classList.remove('show');
+    document.getElementById("emailWarning").classList.remove('show');
+}
+
 function sendEmail() {
     var name = document.getElementById('name').value;
     var email = document.getElementById('email').value;
@@ -29,33 +34,36 @@ function sendEmail() {
     }
     else
         document.getElementById('name').style.border = 'none';
+
     if (email === '' || email == null) {
         error = error + 'Email is required.\n';
         document.getElementById('email').style.border = 'solid 2px rgb(255, 100, 100)';
     }
     else
         document.getElementById('email').style.border = 'none';
+
     if (emailMessage === '' || emailMessage == null) {
         error = error + 'Message is required.\n';
         document.getElementById('message').style.border = 'solid 2px rgb(255, 100, 100)';
     }
     else
         document.getElementById('message').style.border = 'none';
+        
 
     if (error != '') {
-        document.getElementById("warning").style.animation = "modal-in 8000ms ease forwards";
+        document.getElementById("warning").classList.add('show');
+        setTimeout("resetModal()", 8000);
         return false;
     }
 
     if (!email.match(emailPattern)) {
         document.getElementById('email').style.border = 'solid 2px rgb(255, 100, 100)';
-        document.getElementById("emailWarning").style.animation = "modal-in 8000ms ease forwards";
+        document.getElementById("emailWarning").classList.add('show');
+        setTimeout("resetModal()", 8000);
         return false;
     }
     else
         document.getElementById('email').style.border = 'none';
-
-
 
     Email.send({
         SecureToken : "01dd3e9b-a4ed-4397-a45e-06124742f27b",
@@ -65,7 +73,7 @@ function sendEmail() {
         Body : body
     })
     document.getElementById("form").reset();
-    document.getElementById("notification").style.animation = "modal-in 3500ms ease forwards";
-    setTimeout("location.reload(true)", 3000);
+    document.getElementById("notification").style.animation = "modal-in 4000ms ease forwards";
+    setTimeout("location.reload(true)", 4000);
 }
 

@@ -178,6 +178,7 @@ textarea {
 
 
 
+
 /* FOOTER */
 
 
@@ -316,11 +317,6 @@ footer .name {
         width: 80%;
         background-color: transparent;
     }
-
-    #btn:hover {
-        animation: click-button 1000ms forwards;
-    }
-
 }
 
 /* BIG SCREEN */ 
@@ -340,6 +336,11 @@ footer .name {
         flex-direction: row;
         justify-content: center;
         align-items: center;
+        transition: 4000ms ease;
+    }
+
+    .modal.show {
+        transform: translateX(-120%);
     }
     
     .modal img {
@@ -365,19 +366,6 @@ footer .name {
         background-color: rgb(199, 135, 24);
     }
     
-}
-
-/* ANIMATIONS */
-
-@keyframes click-button {
-    0% {
-        background-color: white;
-        color: #1e3c6e;
-    }
-    100% {
-        color: white;
-        background-color: #1e3c6e;
-    }
 }
 
 @keyframes modal-in {
