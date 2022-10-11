@@ -766,10 +766,6 @@ footer p {
     .me.opened .about .four {
         animation: slide-in 1s forwards 800ms;
     }
-    
-    .me.opened .about .five {
-        animation: slide-in 1s forwards 900ms;
-    }
 
     .me.closed {
         background-size: 0% 100%;
@@ -1038,10 +1034,6 @@ footer p {
     
     .me:hover .about .four {
         animation: slide-in 1s forwards 800ms;
-    }
-    
-    .me:hover .about .five {
-        animation: slide-in 1s forwards 900ms;
     }
 
     /* KNOWLEDGE */
