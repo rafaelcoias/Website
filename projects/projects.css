@@ -100,20 +100,20 @@ header {
 
 
 main {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
-    height: 90vh;
+    height: 100vh;
     padding: 10%;
 
     background-image: linear-gradient(#1e3c6e 50%, #2b5398, grey);
 }
 
 main h1 {
-    position: absolute;
-    top: 7rem;
+    position: relative;
 
     font-family: my-font-B;
     opacity: 0;
@@ -127,7 +127,7 @@ main h1 {
     width: 100%;
 
     display: grid;
-    grid-template-columns: repeat(5, 14.5rem);
+    grid-template-columns: repeat(4, 14.5rem);
     justify-content: center;
     align-items: center;
 }
@@ -200,6 +200,10 @@ main h1 {
     background-image: url("../images/projects/libft.png");
 }
 
+.b2b {
+    background-image: url("../images/projects/b2b.png");
+}
+
 .pushswap {
     background-image: url("../images/projects/pushswap.png");
     background-size: contain;
@@ -233,6 +237,12 @@ main h1 {
 
 .scut {
     background-image: url("../images/projects/scut.png");
+}
+
+.rogue {
+    background-image: url("../images/projects/rogue.png");
+    background-size: contain;
+    background-position: 100%;
 }
 
 .webdev {
@@ -419,7 +429,7 @@ footer p {
         justify-content: space-evenly;
         align-items: center;
 
-        height: 90rem;
+        height: 100rem;
         padding: 1rem;
 
         background-image: linear-gradient(#1e3c6e, #2b5398, grey);
@@ -441,7 +451,6 @@ footer p {
         justify-content: center;
         align-items: center;
     }
-
 
     .project {
         opacity: 0;
