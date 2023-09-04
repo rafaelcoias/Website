@@ -47,6 +47,7 @@ header {
     background-color: transparent;
     margin: 5%;
     cursor: pointer;
+    transition: all 150ms ease-in;
 }
 
 .media:hover {
@@ -67,7 +68,7 @@ header {
     background-size: 0% 3px;
     background-repeat: no-repeat;
     background-position: center bottom;
-    transition: background-size 300ms ease;
+    transition: background-size 350ms ease;
     padding: 0.6rem;
 
     font-family: my-font-B;
@@ -238,7 +239,7 @@ main span {
 
 .history p {
     font-size: 1.3rem;
-    text-align: center;
+    text-align: left;
     width: 40rem;
 }
 

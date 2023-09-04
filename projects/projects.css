@@ -45,6 +45,7 @@ header {
     background-color: transparent;
     margin: 5%;
     cursor: pointer;
+    transition: all 150ms ease-in;
 }
 
 .media:hover {
@@ -106,7 +107,7 @@ main {
     justify-content: center;
     align-items: center;
 
-    height: 100vh;
+    min-height: 100vh;
     padding: 10%;
 
     background-image: linear-gradient(#1e3c6e 50%, #2b5398, grey);
@@ -245,8 +246,8 @@ main h1 {
     background-position: 100%;
 }
 
-.webdev {
-    background-image: url("../images/projects/webdev.png");
+.visiond {
+    background-image: url("../images/projects/visiond-bg.png");
 }
 
 

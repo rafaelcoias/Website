@@ -45,6 +45,7 @@ header {
     background-color: transparent;
     margin: 5%;
     cursor: pointer;
+    transition: all 150ms ease-in;
 }
 
 .media:hover {
@@ -99,53 +100,56 @@ header {
 /* MAIN */
 
 main {
+    position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 
-    height: 100vh;
+    padding-top: 8rem;
+    min-height: 100vh;
+
     background-image: linear-gradient(#1e3c6e 50%, #2b5398, grey);
 
-    padding: 5%;
 }
 
 main h1 {
     position: relative;
-    top: -3rem;
     font-family: my-font-B;
+    margin-bottom: 2rem;
 }
 
 form {
-    background-color:  #2b5398;
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 30%;
-    padding: 5%;
+    width: 20em;
     border-radius: 30px;
 }
 
 input {
-    background-color: rgb(203, 203, 203);
+    background-color: white;
     color: black;
     border: none;
     margin: 5%;
+    padding-inline: 5px;
     width: 100%;
-    height: 15%;
-    border-radius: 3px;
+    height: 2rem;
+    border-radius: 10px;
+    outline: none;
 }
 
 textarea {
-    width: 100%;
-    height: 95%;
-    margin: 5%;
-
-    background-color: rgb(203, 203, 203);
+    background-color: white;
     color: black;
     border: none;
-    border-radius: 3px;
+    margin: 5%;
+    padding: 5px;
+    width: 100%;
+    border-radius: 10px;
+    outline: none;
+    resize: none;
 }
 
 
@@ -153,8 +157,8 @@ textarea {
     border: none;
     border-radius: 100vmax;
 
-    width: 40%;
-    height: 30%;
+    width: 8rem;
+    height: 2rem;
     margin: 5%;
 
     background-color:#1e3c6e;
@@ -162,7 +166,7 @@ textarea {
     font-size: 1rem;
     font-family: my-font-B;
 
-    transition: 500ms ease;
+    transition: all 600ms ease;
 }
 
 #btn:hover {
@@ -305,7 +309,9 @@ footer .name {
         animation-fill-mode: forwards;
     }
 
+}
 
+@media screen and (max-width: 400px) {
     /* MAIN */
 
     main h1 {

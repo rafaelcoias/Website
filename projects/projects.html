@@ -20,16 +20,16 @@
             <button type="button" class="media" onclick="window.open('https://github.com/rafaelcoias','_blank')"><img src="../images/social-media/github.png" width="35rem"></button>
         </div>
         <div class="position-info">
-            <label class="info" onclick="window.open('../index.html')">About</label>
-            <label class="info" onclick="window.open('#')">Projects</label>
-            <label class="info" onclick="window.open('../contact/contact.html')">Contact</label>
+            <label class="info" onclick="window.location.replace('../index.html')">About</label>
+            <label class="info">Projects</label>
+            <label class="info" onclick="window.location.replace('../contact/contact.html')">Contact</label>
         </div>
         <div class="menu">
             <img class="menu-icon" src="../images/others/menu-button.png" onclick="openmenu()">
             <div id="menuList">
-                <p class="menu-one" onclick="window.open('../index.html')">ABOUT</p>
-                <p class="menu-two" onclick="window.open('../projects/projects.html')">PROJECTS</p>
-                <p class="menu-three" onclick="window.open('../contact/contact.html')">CONTACTS</p>
+                <p class="menu-one" onclick="window.location.replace('../index.html')">ABOUT</p>
+                <p class="menu-two">PROJECTS</p>
+                <p class="menu-three" onclick="window.location.replace('../contact/contact.html')">CONTACTS</p>
             </div>
         </div>      
     </header>
@@ -37,6 +37,10 @@
     <main>
         <h1>Some of my IT Projects</h1>
         <div class="grid">
+            <div class="project visiond" onclick="window.open('https://visiond.pt')">
+                <h3>Vision D</h3>
+                <p>IT consulting company</p>
+            </div>
             <div class="project libft" onclick="window.open('https://github.com/rafaelcoias/42_libft')">
                 <h3>Libft</h3>
                 <p>My very first own library in C</p>
@@ -80,10 +84,6 @@
             <div class="project rogue" onclick="window.open('https://github.com/rafaelcoias/Rogue_Game')">
                 <h3>Rogue</h3>
                 <p>Simple 2D game in Java using classes as objects</p>
-            </div>
-            <div class="project webdev" onclick="window.open('https://github.com/rafaelcoias/Web_Dev')">
-                <h3>Web Dev</h3>
-                <p>My very first own website using HTML, CSS and JS</p>
             </div>
         </div>
     </main>

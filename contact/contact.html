@@ -20,16 +20,16 @@
             <button type="button" class="media" onclick="window.open('https://github.com/rafaelcoias','_blank')"><img src="../images/social-media/github.png" width="35rem"></button>
         </div>
         <div class="position-info">
-            <label class="info" onclick="window.open('../index.html')">About</label>
-            <label class="info" onclick="window.open('../projects/projects.html')">Projects</label>
-            <label class="info" onclick="window.open('#')">Contact</label>
+            <label class="info" onclick="window.location.replace('../index.html')">About</label>
+            <label class="info" onclick="window.location.replace('../projects/projects.html')">Projects</label>
+            <label class="info">Contact</label>
         </div>
         <div class="menu">
             <img class="menu-icon" src="../images/others/menu-button.png" onclick="openmenu()">
             <div id="menuList">
-                <p class="menu-one" onclick="window.open('../index.html')">ABOUT</p>
-                <p class="menu-two" onclick="window.open('../projects/projects.html')">PROJECTS</p>
-                <p class="menu-three" onclick="window.open('../contact/contact.html')">CONTACTS</p>
+                <p class="menu-one" onclick="window.location.replace('../index.html')">ABOUT</p>
+                <p class="menu-two" onclick="window.location.replace('../projects/projects.html')">PROJECTS</p>
+                <p class="menu-three">CONTACTS</p>
             </div>
         </div>       
     </header>
@@ -49,10 +49,10 @@
             <p>Please Write A Valid Email</p>
         </div>
         <form id="form" onsubmit="sendEmail(); return false;">
-            <input placeholder="Name" id="name" type="text" autocomplete="off">
-            <input placeholder="your-email@example.com" id="email" type="text" autocomplete="off">
-            <input placeholder="Subject" id="subject" type="text" autocomplete="off">
-            <textarea placeholder="Message" id="message" cols="30" rows="10"></textarea>
+            <input placeholder="| Name" id="name" type="text" autocomplete="off">
+            <input placeholder="| Email" id="email" type="email" autocomplete="off">
+            <input placeholder="| Subject" id="subject" type="text" autocomplete="off">
+            <textarea placeholder="|" id="message" cols="30" rows="10"></textarea>
             <button id="btn" type="submit">Send</button>
         </form>
     </main>
