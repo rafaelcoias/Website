@@ -832,61 +832,31 @@ footer p {
 
     /* HISTORY */
 
-    .history div {
+    .history {
+        padding-inline: 1rem;
+    }
+
+    .history > div {
+        margin-block: 3rem;
+        height: auto;
+        width: 100%;
+    }
+
+    .history > div p {
+        width: 100%;
+        text-align: center;
+        text-wrap: balance;
+    }
+
+    .history div.odd {
         display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-
-        height: 28rem;
+        flex-direction: column;
     }
 
-    .history .csjb , .history .cisco {
-        position: absolute;
-        top: 0px;
-    }
-
-    .history .germany {
-        position: absolute;
-        top: 15px;
-    }
-
-    .history .german.text {
-        position: absolute;
-        top: 25px;
-    }
-
-    .history .iscte {
-        display: none;
-    }
-
-    .history .iscte-mobile {
-        display: block;
-        position: absolute;
-        top: 90px;
-    }
-
-    .history .fortytwo {
-        position: absolute;
-        top: -30px;
-        width: 10px;
-    }
-
-    .history .reveal .fortytwotext {
-        position: absolute;
-        top: 30px;
-    }
-
-    .history p {
-        position: relative;
-        top: 80px;
-        width: 350px;
-        font-size: 1.1rem;
-    }
-
-    .history .link {
-        position: relative;
-        top: 75px;
+    .history div.even {
+        display: flex;
+        flex-direction:column-reverse;
+        margin-block: 3rem;
     }
 
     /* KNOWLEDGE */
