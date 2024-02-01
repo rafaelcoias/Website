@@ -637,6 +637,13 @@ footer p {
         overflow-x: hidden;
     }
 
+    .history .iscte-mobile {
+        display: flex;
+    }
+    .history .iscte {
+        display: none;
+    }
+
     /* HEADER */
 
     .media {
@@ -941,27 +948,6 @@ footer p {
         align-items: center;
     }
 
-}
-
-/* REVEAL SMALL DEVICE */
-
-@media only screen and (max-width: 370px) {
-    .history p {
-        position: relative;
-        top: 80px;
-        width: 300px;
-        font-size: 1.1rem;
-    }
-
-    .history .csjb {
-        position: absolute;
-        top: -20px;
-    }
-
-    .history .germany {
-        position: absolute;
-        top: 0;
-    }
 }
 
 /* REVEAL FOR MOUSE */
